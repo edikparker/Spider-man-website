@@ -1,0 +1,38 @@
+{
+  "devDependencies": {
+    "sass-embedded": "^1.104.1",
+    "vite": "^8.3.0"
+  },
+  "name": "spider-man-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "detect-libc": "^2.1.2",
+    "fdir": "^6.5.0",
+    "lightningcss": "^1.33.0",
+    "lightningcss-win32-x64-msvc": "^1.33.0",
+    "nanoid": "^3.3.19",
+    "picocolors": "^1.1.1",
+    "picomatch": "^4.0.7",
+    "postcss": "^8.5.28",
+    "rolldown": "^1.2.9",
+    "source-map-js": "^1.2.1",
+    "swiper": "^14.2.0",
+    "tinyglobby": "^0.2.17"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edikparker/Spider-man-website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edikparker/Spider-man-website/issues"
+  },
+  "homepage": "https://github.com/edikparker/Spider-man-website#readme"
+}

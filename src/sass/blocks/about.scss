@@ -1,0 +1,173 @@
+@use '/src/sass/base/variables.scss' as*;
+
+
+
+
+.about__top {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+
+.about__image {
+    width: 500px;
+    border-radius: 20px;
+}
+
+
+
+.about__information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 500px;
+
+}
+
+
+.about__title {
+    font-size: 60px;
+    line-height: 1;
+}
+
+
+.about__skills {
+    font-size: 24px;
+    margin: 0;
+}
+
+
+.about__description {
+    font-size: 20px;
+    line-height: 1.6;
+    color: $text-muted;
+}
+
+
+
+.about__slider {
+    margin-top: 150px;
+    position: relative;
+}
+
+
+
+.swiper-button-prev,
+.swiper-button-next {
+    --swiper-navigation-size: 24px;
+    --swiper-navigation-sides-offset: -45px;
+
+    width: 30px;
+    height: 30px;
+
+    background: transparent;
+    border: none;
+    padding: 0;
+
+    color: $primary;
+}
+
+.swiper-pagination {
+    --swiper-pagination-bottom: -40px;
+}
+
+.swiper-pagination-bullet {
+    --swiper-pagination-bullet-size: 12px;
+    --swiper-pagination-bullet-inactive-opacity: 0.5;
+    --swiper-pagination-bullet-inactive-color: #ffffff;
+}
+
+.swiper-pagination-bullet-active {
+    --swiper-theme-color: red;
+}
+
+
+
+
+
+.about__abilities {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+.about__ability {
+    min-width: 0;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+    transition: 0.3s;
+    cursor: pointer;
+    border-radius: 15px;
+    border: 1px solid $border;
+    background-color: $surface;
+    box-shadow: $shadow;
+}
+
+.about__ability.swiper-slide {
+    height: auto;
+}
+
+
+.about__ability:hover {
+    transform: translate(0, -10px);
+    border-color: $primary;
+    box-shadow: $shadow-primary;
+}
+
+
+
+
+
+
+
+@media (max-width: 767px) {
+    .about__top {
+        margin-top: 50px;
+        align-items: center;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+
+    .about__image {
+        max-width: 500px;
+        width: 100%;
+    }
+
+
+
+    .about__title {
+        text-align: center;
+        margin: 50px 0 0;
+    }
+
+
+
+    .about__skills {
+        font-size: 20px;
+        padding-top: 15px;
+    }
+
+
+
+    .about__description {
+        font-size: 16px;
+        margin: 10px 0 0;
+        text-align: center;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        --swiper-navigation-sides-offset: -25px;
+    }
+
+}

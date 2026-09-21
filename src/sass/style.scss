@@ -1,0 +1,30 @@
+@use "./base/variables" as *;
+@use "./base/basic";
+
+
+
+@use "./blocks/header";
+@use "./blocks/hero";
+@use "./blocks/about";
+@use "./blocks/movies";
+@use "./blocks/gallery";
+@use "./blocks/contact";
+
+
+
+
+
+
+
+// :root {
+//     --color-surface: #111722;
+//     --color-surface-light: #18202d;
+//     --color-primary: #e50914;
+//     --color-primary-dark: #b20710;
+//     --color-secondary: #1683ff;
+//     --color-text: #f5f7fa;
+//     --color-text-muted: #aeb6c2;
+//     --color-border: rgba(255, 255, 255, 0.1);
+//     --shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
+//     --shadow-primary: 0 20px 45px rgba(229, 9, 20, 0.18);
+// }

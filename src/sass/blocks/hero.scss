@@ -1,0 +1,121 @@
+@use '/src/sass/base/variables.scss' as*;
+
+
+
+
+.hero {
+    min-height: 100vh;
+    margin-top: 100px;
+}
+
+
+
+.hero .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+
+
+
+.hero__information {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.hero__title {
+    font-size: 80px;
+    margin: 0;
+    transition: 0.3s;
+    font-weight: 800;
+    letter-spacing: -2px;
+}
+
+.hero__title:hover {
+    transform: translate(0, -10px);
+}
+
+
+
+.hero__description {
+    margin: 0;
+    font-size: 20px;
+    color: $text-muted;
+    line-height: 1.6;
+}
+
+
+.hero__image {
+    width: 500px;
+    transition: 0.3s;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.hero__image:hover {
+    transform: scale(1.02);
+}
+
+
+.hero__button {
+    height: 40px;
+    width: 150px;
+    color: $text;
+    background-color: $primary;
+    border-radius: 10px;
+    font-size: 16px;
+    border: none;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+.hero__button:hover {
+    background-color: $secondary;
+    transform: translateY(-3px);
+}
+
+
+
+@media (max-width: 600px) {
+    .hero {
+        margin-top: 50px;
+        padding: 0;
+    }
+
+
+    .hero .container {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .hero__information {
+        max-width: 100%;
+    }
+
+    .hero__title {
+        font-size: 48px;
+        text-align: center;
+    }
+
+    .hero__description {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .hero__button {
+        align-self: center;
+    }
+
+    .hero__image {
+        width: 100%;
+        max-width: 500px;
+    }
+}

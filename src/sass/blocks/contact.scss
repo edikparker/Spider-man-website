@@ -1,0 +1,129 @@
+@use '/src/sass/base/variables.scss' as*;
+
+
+
+
+.contact {
+    margin: 50px 0 0;
+}
+
+
+.contact__title {
+    font-size: 60px;
+    margin: 0 auto;
+    width: fit-content;
+    position: relative;
+}
+
+
+
+
+.contact__title::after {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 2px;
+    left: 50%;
+    bottom: -15px;
+    transform: translateX(-50%);
+    background-color: $primary;
+    transition: 0.3s;
+}
+
+
+
+
+.contact__title:hover::after {
+    width: 100%;
+}
+
+
+
+
+.contact__description {
+    padding: 10px 0 0;
+    margin: 0;
+    font-size: 20px;
+    text-align: center;
+    color: $text-muted;
+}
+
+
+
+
+.contact__form {
+    margin: 20px auto 0;
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    gap: 20px;
+}
+
+
+.contact__field {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+
+.contact__input,
+.contact__textarea {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.contact__textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+
+
+
+.contact__button {
+    margin: 30px 0;
+    align-self: center;
+    height: 40px;
+    width: 250px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 10px;
+    color: $text;
+    background-color: $primary;
+}
+
+.contact__button:hover {
+    background-color: $secondary;
+    transform: translateY(-3px);
+}
+
+
+
+
+
+@media (max-width: 600px) {
+    .contact__title {
+        font-size: 40px;
+    }
+
+
+    .contact__description {
+        font-size: 15px;
+    }
+
+
+    .contact__form {
+        gap: 10px;
+    }
+
+
+    .contact__button {
+        margin-top: 0px;
+    }
+
+}
