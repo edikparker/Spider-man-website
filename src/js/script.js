@@ -41,3 +41,22 @@ const swiper = new Swiper('.swiper', {
     },
 });
 
+
+
+
+// BURGER MENU
+
+const burger = document.querySelector('.header__burger');
+const navigation = document.querySelector('.header__navigation');
+const menuClose = document.querySelector('.header__menu-close');
+
+burger.addEventListener('click', () => {
+    navigation.classList.add('header__navigation_active');
+});
+
+menuClose.addEventListener('click', () => {
+    navigation.classList.remove('header__navigation_active');
+});
+
+
+
